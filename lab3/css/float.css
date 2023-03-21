@@ -18,10 +18,24 @@ h1 {
     border-bottom: 2px solid rgb(0, 177, 103);
     border-bottom-left-radius: 10px;
     border-top-right-radius: 7px;
-    background-color: rgba(255, 235, 205, 1);
+
     padding: 5px;
     color: rgba(2, 102, 89, 1);
 }
+
+[class*="col-"]:nth-of-type(3n+1) .topic {
+    background-color: rgba(255, 215, 205, 1);
+}
+
+[class*="col-"]:nth-of-type(3n+2) .topic {
+
+    background-color: rgba(255, 235, 205, 1);
+}
+
+[class*="col-"]:nth-of-type(3n) .topic {
+    background-color: rgba(255, 255, 205, 1);
+}
+
 
 .wrapper {
     margin: 0 auto;
@@ -29,9 +43,10 @@ h1 {
 
 .row {
     width: 100%;
+
 }
 
-p {
+p:nth-of-type(3n+1) {
     padding: 18px;
     color: blanchedalmond;
 }
