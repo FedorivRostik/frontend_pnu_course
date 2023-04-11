@@ -1,69 +1,83 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.h1-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
-  text-align: center;
-  margin-top: 10px;
+    margin-top: 10px;
+}
+
+.topic-wrapper {
+    display: flex;
+    justify-content: end;
 }
 
 .topic {
-  font-size: 14px;
-  font-weight: bold;
-  border-left: 2px solid rgb(0, 177, 103);
-  border-bottom: 2px solid rgb(0, 177, 103);
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 7px;
-  padding: 5px;
-  color: rgba(2, 102, 89, 1);
+    font-size: 14px;
+    font-weight: bold;
+    border-left: 2px solid rgb(0, 177, 103);
+    border-bottom: 2px solid rgb(0, 177, 103);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 7px;
+    padding: 5px;
+    color: rgba(2, 102, 89, 1);
 }
 
 [class*="col-"]:nth-of-type(3n+1) .topic {
-  background-color: rgba(255, 215, 205, 1);
+    background-color: rgba(255, 215, 205, 1);
 }
 
 [class*="col-"]:nth-of-type(3n+2) .topic {
-  background-color: rgba(255, 235, 205, 1);
+
+    background-color: rgba(255, 235, 205, 1);
 }
 
 [class*="col-"]:nth-of-type(3n) .topic {
-  background-color: rgba(255, 255, 205, 1);
+    background-color: rgba(255, 255, 205, 1);
 }
 
-.wrapper {
-  margin: 0 auto;
-}
 
 .row {
-  display: flex;
-  flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 p:nth-of-type(3n+1) {
-  padding: 18px;
-  color: blanchedalmond;
+    padding: 18px;
+    color: blanchedalmond;
 }
 
+
+
 [class*="col-"] {
-  margin: 2%;
-  border: 3px solid rgb(29, 151, 100);
-  border-radius: 10px;
-  background-color: rgba(2, 102, 89, 0.877);
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  transition: all 0.2s;
+
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 0 2%;
+    border: 3px solid rgb(29, 151, 100);
+    border-radius: 10px;
+    background-color: rgba(2, 102, 89, 0.877);
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    transition: all 0.2s;
 }
 
 [class*="col-"]:hover {
-  opacity: 0.8;
-  box-shadow: rgba(0, 0, 0, 0.15) 4.8px 4.8px 6.4px;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.15) 4.8px 4.8px 6.4px;
 }
 
 [class*="col-"]:active {
-  opacity: 0.7;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px;
+    opacity: 0.7;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px;
 }
 
 /* Styles For Desktop */
