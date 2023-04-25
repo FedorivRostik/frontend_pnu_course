@@ -1,0 +1,69 @@
+header>h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+header>a:last-of-type {
+    font-style: italic;
+}
+
+section:first-of-type>h2:first-of-type {
+    text-align: center;
+}
+
+section:last-of-type>h2:first-of-type {
+    text-align: center;
+}
+
+ul li:nth-of-type(2n+1),
+li ul li:nth-of-type(2n+1) {
+    background-color: gray;
+    color: white;
+}
+
+li ul:not(li:nth-of-type(2n)) {
+    background-color: white;
+    color: black;
+}
+
+ol li:nth-of-type(3):hover,
+ol li:nth-of-type(5):hover,
+li ol li:nth-of-type(3):hover,
+li ol li:nth-of-type(5):hover {
+    cursor: pointer;
+}
+
+li ol:not(li:nth-of-type(3):hover),
+li ol:not(li:nth-of-type(5):hover) {
+    cursor: text;
+}
+
+ol li:nth-of-type(4),
+li ol li:nth-of-type(4) {
+    background-color: rgb(226, 103, 128);
+    color: rgb(1, 2, 1);
+}
+
+li ol:not(li:nth-of-type(4)) {
+    background-color: white;
+}
+
+@media (min-width: 993px) {
+
+    /* Desktop view */
+    .lists-container {
+        display: flex;
+    }
+
+    .list {
+        flex: 1;
+    }
+}
+
+@media (max-width: 992px) {
+
+    /* Tablet and mobile view */
+    .lists-container {
+        display: block;
+    }
+}

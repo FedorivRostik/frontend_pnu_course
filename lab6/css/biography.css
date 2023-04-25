@@ -1,0 +1,99 @@
+#header-id {
+    text-align: center;
+    font-size: 22px;
+}
+
+h2 {
+    margin-bottom: 1%;
+}
+
+header a {
+    font-style: italic;
+}
+
+section h3 {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border: 10px solid black;
+    border-radius: 99%;
+    display: block;
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 1%;
+}
+
+.button:hover {
+    background-color: magenta;
+    color: #06003d;
+}
+
+.button:active {
+    background-color: yellow;
+    color: black;
+}
+
+section:last-of-type div article {
+    font-size: 1.2em;
+}
+
+section:last-of-type div article h2 {
+    font-size: 1.8em;
+}
+
+.block1 {
+    background-color: rgb(255, 179, 179);
+    color: darkblue;
+}
+
+.block2 {
+    background-color: rgb(242, 250, 215);
+    color: rgb(32, 82, 25);
+}
+
+.block3 {
+    background-color: rgb(250, 178, 196);
+    color: rgb(46, 46, 46);
+}
+
+.block4 {
+    background-color: rgb(203, 250, 181);
+    color: black;
+}
+
+.block5 {
+    background-color: rgb(122, 58, 106);
+    color: floralwhite;
+}
+
+section:last-of-type a {
+    font-weight: bold;
+}
+
+footer a {
+    text-transform: uppercase;
+}
+
+.sec-boder-block,
+.sec-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec-block {
+    margin-bottom: 1%;
+    min-width: 350px;
+}
+
+.sec-boder-block {
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 5px;
+}

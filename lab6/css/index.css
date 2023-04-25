@@ -1,0 +1,54 @@
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 1%;
+}
+
+ul {
+    list-style: none;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1%;
+}
+
+li {
+    margin-bottom: 1%;
+}
+
+li:first-child a:link {
+    color: darkblue;
+}
+
+li:first-child a:visited {
+    color: darkgreen;
+}
+
+li:nth-child(2) a:link {
+    color: red;
+}
+
+li:nth-child(2) a:visited {
+    color: rgb(1, 56, 56);
+}
+
+li:nth-child(3) a:link {
+    color: rgb(1, 27, 1);
+}
+
+li:nth-child(3) a:visited {
+    color: rgb(73, 11, 73);
+}
+
+li:last-child a:link {
+    color: orangered;
+}
+
+li:last-child a:visited {
+    color: mediumvioletred;
+}

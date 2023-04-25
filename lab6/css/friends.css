@@ -1,0 +1,62 @@
+header>h1 {
+    text-align: center;
+    font-size: 22px;
+}
+
+header>a {
+    font-style: italic;
+}
+
+section h2:first-child {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(2n)>td {
+    background-color: gray;
+    color: white;
+}
+
+table,
+th,
+td {
+    border: 3px solid rgb(115, 233, 5);
+    padding: 5px 8px;
+    border-radius: 0.9em;
+}
+
+td:last-child {
+    text-align: end;
+}
+
+@media (min-width: 993px) {
+    table tr th {
+        font-size: 130%;
+    }
+
+    table tr td {
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    table tr th {
+        font-size: 120%;
+    }
+
+    table tr td {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 768px) {
+    table tr th {
+        font-size: 110%;
+    }
+}
