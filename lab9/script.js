@@ -7,14 +7,14 @@ const route = (event) => {
 
 const routes = {
 
-    "/lab9/": "./index.html",
-    "/lab9/catalog": "./pages/catalog.html",
-    "/lab9/catalog/1": "./pages/catalog_data.html",
-    "/lab9/catalog/2": "./pages/catalog_data.html",
-    "/lab9/catalog/3": "./pages/catalog_data.html",
-    "/lab9/catalog/4": "./pages/catalog_data.html",
-    "/lab9/catalog/5": "./pages/catalog_data.html",
-    "/lab9/catalog/6": "./pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/": "./index.html",
+    "/frontend_pnu_course/lab9/catalog": "./pages/catalog.html",
+    "/frontend_pnu_course/lab9/catalog/1": "./pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/2": "./pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/3": "./pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/4": "./pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/5": "./pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/6": "./pages/catalog_data.html",
 };
 const endsWithNumber = (text) => {
     return /\d$/.test(text);
@@ -26,14 +26,14 @@ const handleLocation = async () => {
     const path = window.location.pathname;
     const route = routes[path];
     
-    if (path === "/lab9/") {
+    if (path === "/frontend_pnu_course/lab9/") {
         const html = await fetch(route).then((data) => data.text());
         document.getElementsByTagName("html")[0].innerHTML = html;
     }
     else if (endsWithNumber(path)) {
-        const html = await fetch('/lab9/pages/catalog_data.html').then((data) => data.text());
-        const data = await fetch(`/lab9/data/catalog${path.slice(-1)}.json`).then((response) => response.json()).then((responseData) => responseData);
-        const dataTitles = await fetch(`/lab9/data/catalog.json`).then((response) => response.json()).then((responseData) => responseData);
+        const html = await fetch('/frontend_pnu_course/lab9/pages/catalog_data.html').then((data) => data.text());
+        const data = await fetch(`/frontend_pnu_course/lab9/data/catalog${path.slice(-1)}.json`).then((response) => response.json()).then((responseData) => responseData);
+        const dataTitles = await fetch(`/frontend_pnu_course/lab9/data/catalog.json`).then((response) => response.json()).then((responseData) => responseData);
         if (data) {
             let dataText = "";
 
@@ -75,7 +75,7 @@ const handleLocation = async () => {
     }
     else {
         const html = await fetch(route).then((data) => data.text());
-        const data = await fetch(`/lab9/data/catalog.json`).then((response) => response.json()).then((responseData) => responseData);
+        const data = await fetch(`/frontend_pnu_course/lab9/data/catalog.json`).then((response) => response.json()).then((responseData) => responseData);
 
         if (data) {
             let dataText = "";
@@ -95,11 +95,11 @@ const handleLocation = async () => {
                         
                     </div>
             </a>
-            <a href="/lab9/catalog/${item.id}" class="hover:underline underline-color-red"  onclick="route()" >Go to</a>
+            <a href="/frontend_pnu_course/lab9/catalog/${item.id}" class="hover:underline underline-color-red"  onclick="route()" >Go to</a>
             </div>`
 
             }
-            dataText += `<a class="inline-flex col-span-3 justify-center items-center rounded-xl p-2 w-full bg-gradient-to-br from-blue-600 to-yellow-400 text-white" href="/lab9/catalog/${getRandomInt(data.data.length)}" onclick="route()">On Sale</a>`;
+            dataText += `<a class="inline-flex col-span-3 justify-center items-center rounded-xl p-2 w-full bg-gradient-to-br from-blue-600 to-yellow-400 text-white" href="/frontend_pnu_course/lab9/lab9/catalog/${getRandomInt(data.data.length)}" onclick="route()">On Sale</a>`;
             document.getElementById("app").innerHTML = html;
             document.getElementById('catalog-section').innerHTML = dataText
             return;
@@ -114,7 +114,7 @@ window.onpopstate = handleLocation;
 window.route = route;
 window.onbeforeunload = function () {
     window.setTimeout(function () {
-        window.location = '/';
+        window.location = '/frontend_pnu_course/lab9/';
     }, 0);
     window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
 }
