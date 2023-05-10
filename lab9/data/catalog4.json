@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id":13,
+      "name": "Catalog1 FULL NAME",
+      "shortname": "Cat1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
+      "price":50
+    },
+    {
+        "id": 14,
+        "name": "Catalog2 FULL name",
+        "shortname": "Cat2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
+        "price":52
+      },
+      {
+        "id": 15,
+        "name": "Catalog3 FULL name",
+        "shortname": "Cat3",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
+        "price":53
+      },
+      {
+        "id": 16,
+        "name": "Catalog4 FULL name",
+        "shortname": "Cat4",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
+        "price":54
+      }
+  ]
+}
