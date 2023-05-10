@@ -6,30 +6,34 @@ const route = (event) => {
 };
 
 const routes = {
-    404: "/pages/404.html",
-    "/": "/index.html",
-    "/catalog": "/pages/catalog.html",
-    "/catalog/1": "/pages/catalog_data.html",
-    "/catalog/2": "/pages/catalog_data.html",
-    "/catalog/3": "/pages/catalog_data.html",
-    "/catalog/4": "/pages/catalog_data.html",
-    "/catalog/5": "/pages/catalog_data.html",
-    "/catalog/6": "/pages/catalog_data.html",
+
+    "/lab9/": "./index.html",
+    "/lab9/catalog": "./pages/catalog.html",
+    "/lab9/catalog/1": "./pages/catalog_data.html",
+    "/lab9/catalog/2": "./pages/catalog_data.html",
+    "/lab9/catalog/3": "./pages/catalog_data.html",
+    "/lab9/catalog/4": "./pages/catalog_data.html",
+    "/lab9/catalog/5": "./pages/catalog_data.html",
+    "/lab9/catalog/6": "./pages/catalog_data.html",
 };
 const endsWithNumber = (text) => {
     return /\d$/.test(text);
 }
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max)+1;
+  }
 const handleLocation = async () => {
     const path = window.location.pathname;
-    const route = routes[path] || routes[404];
+    const route = routes[path];
     
-    if (path === "/") {
+    if (path === "/lab9/") {
         const html = await fetch(route).then((data) => data.text());
         document.getElementsByTagName("html")[0].innerHTML = html;
     }
     else if (endsWithNumber(path)) {
-        const html = await fetch(route).then((data) => data.text());
-        const data = await fetch(`/data/catalog${path.slice(-1)}.json`).then((response) => response.json()).then((responseData) => responseData);
+        const html = await fetch('/lab9/pages/catalog_data.html').then((data) => data.text());
+        const data = await fetch(`/lab9/data/catalog${path.slice(-1)}.json`).then((response) => response.json()).then((responseData) => responseData);
+        const dataTitles = await fetch(`/lab9/data/catalog.json`).then((response) => response.json()).then((responseData) => responseData);
         if (data) {
             let dataText = "";
 
@@ -50,13 +54,20 @@ const handleLocation = async () => {
                         
                     </div>
             </div>
-            <a href="/catalog/${item.id}" class="hover:underline underline-color-red"  onclick="route()" >Go to</a>
             </div>`
 
             }
             dataText += '';
             document.getElementById("app").innerHTML = html;
             document.getElementById('catalog-section').innerHTML = dataText
+            let title = "";
+            for (const item of dataTitles.data) {
+                if (item.id == path.slice(-1)) { 
+                    title += item.name;
+                    break;
+                }
+            }
+            document.getElementById('catalog-h1').innerHTML = title;
             return;
 
 
@@ -64,7 +75,7 @@ const handleLocation = async () => {
     }
     else {
         const html = await fetch(route).then((data) => data.text());
-        const data = await fetch(`./data${path}.json`).then((response) => response.json()).then((responseData) => responseData);
+        const data = await fetch(`/lab9/data/catalog.json`).then((response) => response.json()).then((responseData) => responseData);
 
         if (data) {
             let dataText = "";
@@ -84,11 +95,11 @@ const handleLocation = async () => {
                         
                     </div>
             </a>
-            <a href="/catalog/${item.id}" class="hover:underline underline-color-red"  onclick="route()" >Go to</a>
+            <a href="/lab9/catalog/${item.id}" class="hover:underline underline-color-red"  onclick="route()" >Go to</a>
             </div>`
 
             }
-            dataText += '';
+            dataText += `<a class="inline-flex col-span-3 justify-center items-center rounded-xl p-2 w-full bg-gradient-to-br from-blue-600 to-yellow-400 text-white" href="/lab9/catalog/${getRandomInt(data.data.length)}" onclick="route()">On Sale</a>`;
             document.getElementById("app").innerHTML = html;
             document.getElementById('catalog-section').innerHTML = dataText
             return;
