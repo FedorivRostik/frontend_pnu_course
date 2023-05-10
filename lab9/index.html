@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+   
+    <title>Document</title>
+</head>
+<body>
+   <div class="max-w-screen-xl mx-auto h-screen grid grid-rows-[auto-1fr-auto]">
+    <header class="border-b-2 h-14">
+        <ul class="flex justify-around items-center h-full ">
+            <li class="font-semibold inline-block py-3 px-3 border-b-2 border-transparent hover:border-red-200"><a href="/frontend_pnu_course/lab9/"  onclick="route()">Home</a></li>
+            <li><a href="/frontend_pnu_course/lab9/catalog" class="font-semibold inline-block py-3 px-3 border-b-2 border-transparent hover:border-red-200" onclick="route()">Catalog</a></li>
+        </ul>
+    </header>
+
+    <div id="app" class="my-6">
+      <main class="p-4 ">
+        <div class="flex flex-col">
+
+       
+        <div class="inline-flex justify-center items-center flex-col p-8 space-y-4 bg-gradient-to-b from-slate-50 to-slate-200 rounded-md">
+            <h1 class="">Powered by js</h1>
+            <img src="https://media3.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif?cid=ecf05e47mljpt244102chgkqrjvdpc7ohvcytl15ivb04uya&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="funny GIF" class="w-96 rounded-md h-96">
+        </div>
+    </div>
+      <div class="flex justify-end">
+        <a href="/frontend_pnu_course/lab9/catalog" class="font-semibold py-3 px-3 border-b-2 border-transparent hover:border-black" onclick="route()">go to catalog</a>
+      </div>
+      </main>
+      
+    </div>
+
+    <footer class="border-t-2 flex justify-end">
+       <p class="text-xs py-2 px-2">@all rights reserved</p>
+    </footer>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
