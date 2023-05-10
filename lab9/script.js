@@ -7,7 +7,7 @@ const route = (event) => {
 
 const routes = {
 
-    "/frontend_pnu_course/lab9/": "/frontend_pnu_course/index.html",
+    "/frontend_pnu_course/lab9/": "/frontend_pnu_course/lab9/index.html",
     "/frontend_pnu_course/lab9/catalog": "/frontend_pnu_course/lab9/pages/catalog.html",
     "/frontend_pnu_course/lab9/catalog/1": "/frontend_pnu_course/lab9/pages/catalog_data.html",
     "/frontend_pnu_course/lab9/catalog/2": "/frontend_pnu_course/lab9/pages/catalog_data.html",
