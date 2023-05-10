@@ -7,14 +7,14 @@ const route = (event) => {
 
 const routes = {
 
-    "/frontend_pnu_course/lab9/": "./index.html",
-    "/frontend_pnu_course/lab9/catalog": "./pages/catalog.html",
-    "/frontend_pnu_course/lab9/catalog/1": "./pages/catalog_data.html",
-    "/frontend_pnu_course/lab9/catalog/2": "./pages/catalog_data.html",
-    "/frontend_pnu_course/lab9/catalog/3": "./pages/catalog_data.html",
-    "/frontend_pnu_course/lab9/catalog/4": "./pages/catalog_data.html",
-    "/frontend_pnu_course/lab9/catalog/5": "./pages/catalog_data.html",
-    "/frontend_pnu_course/lab9/catalog/6": "./pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/": "/frontend_pnu_course/index.html",
+    "/frontend_pnu_course/lab9/catalog": "/frontend_pnu_course/lab9/pages/catalog.html",
+    "/frontend_pnu_course/lab9/catalog/1": "/frontend_pnu_course/lab9/pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/2": "/frontend_pnu_course/lab9/pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/3": "/frontend_pnu_course/lab9/pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/4": "/frontend_pnu_course/lab9/pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/5": "/frontend_pnu_course/lab9/pages/catalog_data.html",
+    "/frontend_pnu_course/lab9/catalog/6": "/frontend_pnu_course/lab9/pages/catalog_data.html",
 };
 const endsWithNumber = (text) => {
     return /\d$/.test(text);
@@ -27,7 +27,7 @@ const handleLocation = async () => {
     const route = routes[path];
     
     if (path === "/frontend_pnu_course/lab9/") {
-        const html = await fetch(route).then((data) => data.text());
+        const html = await fetch('/frontend_pnu_course/lab9/index.html').then((data) => data.text());
         document.getElementsByTagName("html")[0].innerHTML = html;
     }
     else if (endsWithNumber(path)) {
@@ -74,7 +74,7 @@ const handleLocation = async () => {
         }
     }
     else {
-        const html = await fetch(route).then((data) => data.text());
+        const html = await fetch("/frontend_pnu_course/lab9/pages/catalog.html").then((data) => data.text());
         const data = await fetch(`/frontend_pnu_course/lab9/data/catalog.json`).then((response) => response.json()).then((responseData) => responseData);
 
         if (data) {
