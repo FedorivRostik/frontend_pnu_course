@@ -42,7 +42,7 @@ const handleLocation = async () => {
                     <div  class="relative flex  overflow-hidden p-4  w-full h-full m-auto mb-2">
         
                 <div class="w-full h-full bg-gradient-to-b from-black/10 to-black/40 rounded-2xl absolute  left-0 top-0 z-10 border-white border-2 "></div>
-                <img src="${data.image}" class="w-full rounded-2xl h-full z-0 opacity-90 object-cover" alt="">
+                <img src="${item.image}" class="w-full rounded-2xl h-full z-0 opacity-90 object-cover" alt="">
              
                     <div class="absolute left-0 bottom-0 z-30 p-7 h-48 overflow-hidden  w-full">
                     <div class="flex w-full  justify-between  items-center">
@@ -85,7 +85,7 @@ const handleLocation = async () => {
                     <a href="/frontend_pnu_course/lab9/catalog/${item.id}"   onclick="route()"  class="relative inline-flex  overflow-hidden p-4  w-full h-full m-auto mb-2">
         
                 <div class="w-full h-full bg-gradient-to-b from-black/10 to-black/40 rounded-2xl absolute  left-0 top-0 z-10 border-white border-2 "></div>
-                <img src="${data.image}" class="w-full rounded-2xl h-full z-0 opacity-90 object-cover" alt="">
+                <img src="${item.image}" class="w-full rounded-2xl h-full z-0 opacity-90 object-cover" alt="">
              
                     <div class="absolute left-0 bottom-0 z-30 p-7 h-48  overflow-hidden  w-full">
 
