@@ -6,6 +6,7 @@
       "shortname": "Cat1",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
       "price":50
+      ,"image": "https://via.placeholder.com/200x200?text=+1"
     },
     {
         "id": 2,
@@ -13,6 +14,7 @@
         "shortname": "Cat2",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
         "price":52
+        ,"image": "https://via.placeholder.com/200x200?text=+1"
       },
       {
         "id": 3,
@@ -20,6 +22,7 @@
         "shortname": "Cat3",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
         "price":53
+        ,"image": "https://via.placeholder.com/200x200?text=+1"
       },
       {
         "id": 4,
@@ -27,6 +30,7 @@
         "shortname": "Cat4",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
         "price":54
+        ,"image": "https://via.placeholder.com/200x200?text=+1"
       },
       {
         "id": 5,
@@ -34,6 +38,7 @@
         "shortname": "Cat5",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
         "price":55
+        ,"image": "https://via.placeholder.com/200x200?text=+1"
       },
       {
         "id": 6,
@@ -41,6 +46,7 @@
         "shortname": "Cat6",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat, corporis nesciunt dolorem voluptatibus soluta eaque esse similique quisquam earum suscipit asperiores eius nemo et repellendus eveniet blanditiis quod? Magnam!",
         "price":56
+        ,"image": "https://via.placeholder.com/200x200?text=+1"
       }
   ]
 }
